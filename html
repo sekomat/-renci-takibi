@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğrenci Takip</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Öğrenci Takip Sistemi</h1>
+    <form id="student-form">
+        <h2>Öğrenci Bilgileri</h2>
+        <label for="student-name">Öğrenci Adı:</label>
+        <input type="text" id="student-name" required>
+        <label for="student-id">Öğrenci Numarası:</label>
+        <input type="text" id="student-id" required>
+
+        <h2>Kitap Bilgileri</h2>
+        <label for="book-title">Kitap Adı:</label>
+        <input type="text" id="book-title" required>
+        <label for="book-author">Yazar:</label>
+        <input type="text" id="book-author" required>
+        <label for="start-date">Başlangıç Tarihi:</label>
+        <input type="date" id="start-date" required>
+        <label for="end-date">Bitiş Tarihi:</label>
+        <input type="date" id="end-date" required>
+        <label for="pages-read">Okunan Sayfa Sayısı:</label>
+        <input type="number" id="pages-read" required>
+        <label for="total-pages">Toplam Sayfa Sayısı:</label>
+        <input type="number" id="total-pages" required>
+
+        <h2>Ders Bilgileri</h2>
+        <label for="subject">Ders Adı:</label>
+        <input type="text" id="subject" required>
+        <label for="study-source">Çalışılan Kaynak:</label>
+        <input type="text" id="study-source" required>
+
+        <h2>Deneme Sınavı Bilgileri</h2>
+        <label for="exam-date">Deneme Sınavı Tarihi:</label>
+        <input type="date" id="exam-date" required>
+        <label for="correct-answers">Doğru Sayısı:</label>
+        <input type="number" id="correct-answers" required>
+        <label for="wrong-answers">Yanlış Sayısı:</label>
+        <input type="number" id="wrong-answers" required>
+        <label for="wrong-subjects">Yanlış Yapılan Dersler:</label>
+        <input type="text" id="wrong-subjects" required>
+
+        <button type="submit">Kaydet</button>
+    </form>
+    <div id="result"></div> 
+    <script src="script.js"></script>
+</body>
+</html>
